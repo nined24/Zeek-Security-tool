@@ -1,0 +1,54 @@
+-------------------------
+1. Check Zeek Version
+-------------------------
+sudo /opt/zeek/bin/zeek -v
+
+
+-------------------------
+2. Find Network Interface
+-------------------------
+ip a
+
+
+-------------------------
+3. Run Zeek (Live Monitoring)
+-------------------------
+sudo /opt/zeek/bin/zeek -i enp0s3
+
+
+-------------------------
+4. Generate Normal Traffic
+-------------------------
+ping google.com
+
+
+-------------------------
+5. Stop Zeek
+-------------------------
+Ctrl + C
+
+
+-------------------------
+6. View Logs
+-------------------------
+ls
+cat conn.log
+cat dns.log
+
+
+-------------------------
+7. Install Nmap
+-------------------------
+sudo apt install nmap -y
+
+
+-------------------------
+8. Simulate Suspicious Activity
+-------------------------
+nmap -p 1-200 google.com
+
+
+-------------------------
+9. Analyze Logs
+-------------------------
+cat conn.log
